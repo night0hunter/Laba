@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  markup:
+    container_name: parmalat_markup_prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: parmalat_markup:prod
+    ports:
+      - 8080:80   

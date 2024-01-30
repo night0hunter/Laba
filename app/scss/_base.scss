@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.text-1 {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+
+.button-1,
+.button-2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    border: 2px solid $element-red;
+    border-radius: 30px;
+    cursor: pointer;
+
+    // @include media("<=SmallTablet") {
+    //     border: 2px solid $element-blue;
+    // }
+}
+
+.button-1 {
+    padding: 1rem 1rem;
+    color: $text-black;
+
+    &:hover {
+        background-color: darken($back-1, 5%);
+    }
+
+    &:active {
+        background-color: darken($back-1, 10%);
+    }
+}
+
+.button-2 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding: 1.9rem 6rem;
+    background-color: $back-1;
+
+    &:active {
+        background-color: darken($back-1, 5%);
+    }
+}
+
+.section-header {
+    font-size: 2rem;
+}
+
+.wrapper {
+    max-width: $wrapperWidth;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.container {
+    max-width: $containerWidth;
+    margin: auto;
+    padding: 0 2rem;
+}
